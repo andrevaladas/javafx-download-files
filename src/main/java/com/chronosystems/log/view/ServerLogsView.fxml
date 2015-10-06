@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="211.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chronosystems.log.controller.ServerLogsController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="227.0" prefWidth="402.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ComboBox id="serversId" fx:id="serverComboBox" layoutX="27.0" layoutY="124.0" prefHeight="25.0" prefWidth="352.0" promptText="[ Select ]" />
+            <Label layoutX="27.0" layoutY="107.0" text="Servers" />
+            <Label layoutX="44.0" layoutY="14.0" text="TJRS - Download Server LOGs">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="56.0" text="Output Folder" />
+            <TextField id="outputFolderId" fx:id="outputFolderTextField" layoutX="28.0" layoutY="73.0" prefHeight="25.0" prefWidth="352.0" text="C:/TEMP/LOGS/servers" />
+            <Button fx:id="downloadFilesButton" layoutX="27.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Start Download" />
+            <Label fx:id="statusBar" layoutX="28.0" layoutY="198.0" prefHeight="17.0" prefWidth="352.0" />
+            <ProgressIndicator fx:id="progressIndicator" layoutX="178.0" layoutY="89.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
